@@ -104,7 +104,7 @@ function CVModal({ onClose }) {
         <p style={{ fontSize: 13, color: TEXT, margin: "2px 0" }}>Matriculation — BSEK (2023–2024)</p>
 
         <a
-          href="/Dilawar_Hamid_Resume.pdf"
+          href={`${import.meta.env.BASE_URL}Dilawar_Hamid_Resume.pdf`}
           download
           style={{
             display: "inline-block", marginTop: 24, padding: "11px 22px",
@@ -180,7 +180,7 @@ export default function Portfolio() {
               View CV
             </button>
             <a
-              href="/Dilawar_Hamid_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Dilawar_Hamid_Resume.pdf`}
               download
               style={{
                 padding: "12px 24px", background: NAVY, color: "#FFFFFF", fontWeight: 600,
@@ -251,7 +251,7 @@ export default function Portfolio() {
           <p style={{ color: GOLD, fontSize: 13, letterSpacing: "0.08em", textTransform: "uppercase", fontWeight: 600, marginBottom: 16 }}>Education</p>
           <div style={{ display: "grid", gap: 12 }}>
             <p style={{ fontSize: 15, color: TEXT, margin: 0 }}><b style={{ color: NAVY }}>Software Engineering Diploma</b> — Aptech &nbsp;<span style={{ color: MUTED }}>(2024–2027)</span></p>
-            <p style={{ fontSize: 15, color: TEXT, margin: 0 }}><b style={{ color: NAVY }}>Second Year Engineering</b> — BIEK &nbsp;<span style={{ color: MUTED }}>(2024–2026, result awaited)</span></p>
+            <p style={{ fontSize: 15, color: TEXT, margin: 0 }}><b style={{ color: NAVY }}>Second Year Engineering</b> — BIEK &nbsp;<span style={{ color: MUTED }}>(2024–2026)</span></p>
             <p style={{ fontSize: 15, color: TEXT, margin: 0 }}><b style={{ color: NAVY }}>Matriculation</b> — BSEK &nbsp;<span style={{ color: MUTED }}>(2023–2024)</span></p>
           </div>
         </section>
