@@ -9,25 +9,18 @@ const BORDER = "#E4E7EC";
 
 const projects = [
   {
+    title: "E-Commerce Web Application",
+    stack: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Multer"],
+    desc: "Full-stack MERN e-commerce platform with complete CRUD for products and categories, JWT authentication with bcrypt password hashing, and a custom Express middleware implementing role-based access control (RBAC) for admin-only operations.",
+    live: null,
+    repo: "https://github.com/dilawar-hamid/ecommerce-store-mern",
+  },
+  {
     title: "LUMIÈRE Hair Studio Management System",
     stack: ["React", "React Router", "Axios", "Formik & Yup", "MockAPI"],
     desc: "Full CRUD salon management system for services, staff and appointments, with client-side routing and validated forms.",
     live: "https://lumiere-hair-studio-management-syst.vercel.app/",
     repo: "https://github.com/dilawar-hamid/lumiere-hair-studio-management-system",
-  },
-  {
-    title: "Currency Converter",
-    stack: ["React", "REST API", "Custom Hooks"],
-    desc: "Real-time currency converter consuming a live exchange-rate API, built with custom hooks for a smooth, responsive UX.",
-    live: "https://dilawar-hamid.github.io/currency-converter/",
-    repo: "https://github.com/dilawar-hamid/currency-converter",
-  },
-  {
-    title: "React Password Generator",
-    stack: ["React", "Hooks", "Reusable Components"],
-    desc: "Customizable password generator with adjustable length and character-set options, built with clean, reusable components.",
-    live: "https://dilawar-hamid.github.io/react-password-generator/",
-    repo: "https://github.com/dilawar-hamid/react-password-generator",
   },
   {
     title: "Hospital Management System",
@@ -36,12 +29,27 @@ const projects = [
     live: null,
     repo: "https://github.com/dilawar-hamid",
   },
+  {
+    title: "Kernel Travels (Team Project)",
+    stack: ["ASP.NET Core MVC", "C#", "MS SQL Server", "Entity Framework", "OAuth"],
+    desc: "Collaborative travel booking platform with Admin/Tourist role-based authentication, Google OAuth, SMTP notifications, and AJAX-based search, filtering and pagination.",
+    live: "https://kernal.runasp.net",
+    repo: null,
+  },
+  {
+    title: "Elegant Salon (Team Project)",
+    stack: ["PHP", "Laravel", "MySQL", "Bootstrap 5", "OAuth"],
+    desc: "Collaborative salon booking platform with Admin/Customer role-based authentication, Google OAuth, SMTP notifications, and AJAX-based search, filtering and pagination.",
+    live: "https://elegantsalon.infinityfree.me",
+    repo: null,
+  },
 ];
 
 const skillGroups = [
-  { label: "Frontend", items: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Bootstrap", "React Router", "Axios", "Formik & Yup"] },
-  { label: "Backend", items: ["PHP", "Laravel", "MySQL", "MVC", "RESTful APIs", "Auth & RBAC"] },
-  { label: "Tools", items: ["Git & GitHub", "VS Code", "XAMPP", "Vercel", "Vite", "npm"] },
+  { label: "Frontend", items: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Bootstrap", "React Router", "Axios", "Formik & Yup", "Context API"] },
+  { label: "Backend", items: ["Node.js", "Express.js", "PHP", "Laravel", "MVC", "RESTful APIs"] },
+  { label: "Database & Auth", items: ["MongoDB", "Mongoose", "MySQL", "JWT", "bcrypt", "Role-Based Access Control"] },
+  { label: "Tools", items: ["Git & GitHub", "VS Code", "Postman", "XAMPP", "Vercel", "Vite", "npm"] },
 ];
 
 const navLinks = [
@@ -239,7 +247,7 @@ export default function Portfolio() {
                 </div>
                 <div style={{ display: "flex", gap: 18 }}>
                   {p.live && <a href={p.live} target="_blank" rel="noreferrer" style={{ color: NAVY, fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Live demo →</a>}
-                  <a href={p.repo} target="_blank" rel="noreferrer" style={{ color: MUTED, fontSize: 13, fontWeight: 600, textDecoration: "none" }}>GitHub →</a>
+                  {p.repo && <a href={p.repo} target="_blank" rel="noreferrer" style={{ color: MUTED, fontSize: 13, fontWeight: 600, textDecoration: "none" }}>GitHub →</a>}
                 </div>
               </div>
             ))}
