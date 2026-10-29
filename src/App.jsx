@@ -11,7 +11,7 @@ const projects = [
   {
     title: "E-Commerce Web Application",
     stack: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Multer"],
-    desc: "Full-stack MERN e-commerce platform with complete CRUD for products and categories, JWT authentication with bcrypt password hashing, and a custom Express middleware implementing role-based access control (RBAC) for admin-only operations.",
+    desc: "Full-stack MERN e-commerce platform built from scratch. JWT authentication with bcrypt hashing, with role-based access control enforced at the backend middleware level (not just the UI). Order and checkout system built on MongoDB transactions, with atomic, race-condition-safe stock updates and server-side price verification to prevent client-side tampering. Full admin and customer order management, with automatic stock restoration on cancellation.",
     live: null,
     repo: "https://github.com/dilawar-hamid/ecommerce-store-mern",
   },
